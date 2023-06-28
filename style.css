@@ -1,0 +1,68 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 30px;
+}
+
+body{
+    padding-top: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: white;
+    color: azure;
+    text-align: left;
+}
+
+h1{
+    padding-left: 50%;
+}
+
+a{
+ text-decoration: none;
+ color: goldenrod;
+}
+
+h2{
+    text-align: justify;
+    color:black;
+    font-family: monospace;
+}
+
+.name{
+    color:black;
+}
+.name2{
+    color:goldenrod;
+}
+
+img{
+    height:450px;
+    width: 100px;
+    float: left;
+}
+
+.border{
+    margin-top: 0;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 250px;
+    background: grey;
+    gap: 7rem;
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+.container{
+    display:flex;
+    gap: 2%;
+}
+.contact{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
