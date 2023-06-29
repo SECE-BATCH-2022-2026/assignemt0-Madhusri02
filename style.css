@@ -2,8 +2,13 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
+    top:0;
 }
-
+#res{
+    color:black;
+    text-align: center;
+    font-size: 3cm;
+}
 html{
     font-size: 30px;
 }
@@ -11,13 +16,46 @@ html{
 body{
     padding-top: 0px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: white;
-    color: azure;
+    color: white;
     text-align: left;
+    background: linear-gradient(-45deg, #9558f7, #f57baa, #ededee, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+hr{
+    height:2px;
+    border-width:0;
+    color:white;
+    background-color:white;
 }
 
 h1{
     padding-left: 50%;
+    font-size: 4cm;
 }
 
 a{
@@ -27,42 +65,56 @@ a{
 
 h2{
     text-align: justify;
-    color:black;
+    color:goldenrod;
     font-family: monospace;
 }
 
 .name{
-    color:black;
+    color:white;
 }
 .name2{
     color:goldenrod;
 }
+.name3{
+    color:goldenrod;
+    font-size: 4cm;
+}
 
 img{
-    height:450px;
-    width: 100px;
+    height:350px;
+   
+    border-radius: 500%;
     float: left;
 }
 
 .border{
-    margin-top: 0;
+    margin-top: 1;
     max-width: 1500px;
     margin: 0 auto;
     padding: 250px;
-    background: grey;
-    gap: 7rem;
+    background: black;
+    
 }
-.profile{
-    grid-column: 1 / -1;
-    margin-bottom: 2rem;
-}
-.container{
-    display:flex;
-    gap: 2%;
-}
+
+
 .contact{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 
 }
-
+.resume-section {
+    opacity: 0;
+    animation: bag-change 3s ease-in-out backwards;
+  }
+  
+  @keyframes bag-change {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 6;
+      transform: translateY(0);
+    }
+  }
+  
